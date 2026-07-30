@@ -6,16 +6,15 @@ shared on social platforms and drive orders via WhatsApp for now.
 
 ## Before you deploy
 
-Edit `index.html` and replace these placeholders:
+Only one thing left to customize in `index.html`:
 
-- `91XXXXXXXXXX` (two spots) → your real WhatsApp Business number, country code first, no `+` or spaces (e.g. `919876543210`)
 - Product photos for the SAFAR — Musk card (currently 🖤 emoji placeholder)
 - Add more `<article class="card">` entries in the `#products` section as new scents launch
 
 Already set to match the product packaging: brand (Grace One / SAFAR),
 Instagram/Facebook (`graceone.in`), support email (`support@graceone.in`),
-price (₹499, 10ml), and claims (alcohol-free, IFRA compliant, lasts up to
-30 days).
+WhatsApp (`+91 99999 87609`), price (₹499, 10ml), and claims (alcohol-free,
+IFRA compliant, lasts up to 30 days).
 
 ## Deploy on Vercel (free)
 
