@@ -249,9 +249,12 @@ body {
   box-shadow: 0 10px 26px rgba(43, 24, 48, 0.12);
 }
 
-.card-img {
-  font-size: 2.4rem;
-  margin-bottom: 14px;
+.card-photo {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
 }
 
 .card h3 {
