@@ -346,6 +346,32 @@ body {
 /* Connect */
 .connect { text-align: center; }
 
+.qr-block {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.qr-block img {
+  border: 1px solid var(--border);
+  padding: 10px;
+  background: #fff;
+  border-radius: var(--radius);
+}
+
+.qr-caption {
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
 .social-links {
   display: flex;
   gap: 14px;
