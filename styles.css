@@ -249,12 +249,76 @@ body {
   box-shadow: 0 10px 26px rgba(43, 24, 48, 0.12);
 }
 
-.card-photo {
-  width: 100%;
+.card {
+  position: relative;
+}
+
+.card:hover {
+  z-index: 5;
+}
+
+.product-gallery {
+  margin-bottom: 16px;
+}
+
+.gallery-main {
+  position: relative;
   max-width: 160px;
+  margin: 0 auto;
+  cursor: crosshair;
+}
+
+.gallery-main-img {
+  display: block;
+  width: 100%;
   height: auto;
   border-radius: var(--radius);
-  margin-bottom: 16px;
+}
+
+.gallery-zoom-pane {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 14px);
+  width: 260px;
+  height: 100%;
+  min-height: 260px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(43, 24, 48, 0.22);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gallery-main.zoom-active .gallery-zoom-pane {
+  display: block;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.gallery-thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.gallery-thumb:hover { opacity: 0.9; }
+
+.gallery-thumb.active {
+  opacity: 1;
+  border-color: var(--ember);
 }
 
 .card h3 {
