@@ -237,6 +237,7 @@ body {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--border);
   border-radius: var(--radius);
   padding: 26px 24px;
   text-align: center;
@@ -272,8 +273,11 @@ body {
 .price { font-weight: 700; color: var(--ember-dark); margin: 0 0 16px; font-size: 1.05rem; }
 .price-note { font-weight: 400; color: var(--ink-soft); font-size: 0.76rem; }
 
-.card-featured { border-color: var(--ember); box-shadow: 0 4px 20px rgba(232, 147, 90, 0.2); }
-.card-soon { opacity: 0.7; }
+.card--musk { border-top-color: #0e1f2b; }
+.card--lavender { border-top-color: #8b7bb8; }
+.card--sandalwood { border-top-color: #a67c4e; }
+.card--vanilla { border-top-color: #d9b25c; }
+.card--jasmine { border-top-color: #7a9a68; }
 
 /* Features */
 .feature {
