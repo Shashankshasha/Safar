@@ -497,13 +497,60 @@ body {
 /* Footer */
 .footer {
   background: var(--dusk-1);
-  padding: 32px 0;
+  padding: 40px 0 28px;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.85rem;
 }
 
 .footer-inner p { margin: 4px 0; }
+
+.footer-legal {
+  max-width: 560px;
+  margin: 0 auto 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.footer-legal-name {
+  font-family: var(--display);
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 6px !important;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-legal-note {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  margin-top: 8px !important;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  margin: 0 auto 20px;
+  font-family: var(--display);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--ember);
+}
 
 /* Product detail pages */
 .product-page-grid {
@@ -571,4 +618,77 @@ body {
   position: absolute;
   left: 0;
   color: var(--ember);
+}
+
+/* Legal pages */
+.legal-page {
+  padding-top: 56px;
+}
+
+.legal-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.legal-content .eyebrow {
+  color: var(--ember-dark);
+}
+
+.legal-content h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.legal-updated {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin: 0 0 40px;
+}
+
+.legal-content h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin: 36px 0 12px;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--ink-soft);
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+.legal-content ul,
+.legal-content ol {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.legal-content strong {
+  color: var(--ink);
+}
+
+.legal-content a {
+  color: var(--ember-dark);
+}
+
+.legal-content .legal-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 24px 0;
+}
+
+.legal-content .legal-box p:last-child {
+  margin-bottom: 0;
 }
