@@ -233,13 +233,10 @@ body {
 
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
-@media (min-width: 1180px) {
-  .grid:not(.grid-3) > .card:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    max-width: 360px;
-  }
+/* Product cards all share one fixed size instead of stretching to fill the row */
+#products .grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  justify-content: center;
 }
 
 /* Product cards */
