@@ -364,11 +364,11 @@ body {
 .price { font-weight: 700; color: var(--ember-dark); margin: 0 0 16px; font-size: 1.05rem; }
 .price-note { font-weight: 400; color: var(--ink-soft); font-size: 0.76rem; }
 
-.card--musk { border-top-color: #0e1f2b; }
-.card--lavender { border-top-color: #8b7bb8; }
-.card--sandalwood { border-top-color: #a67c4e; }
-.card--vanilla { border-top-color: #d9b25c; }
-.card--jasmine { border-top-color: #7a9a68; }
+.card--musk { border-top-color: #0e1f2b; background: #e8edf2; }
+.card--lavender { border-top-color: #8b7bb8; background: #f1ecf8; }
+.card--sandalwood { border-top-color: #a67c4e; background: #f6ede0; }
+.card--vanilla { border-top-color: #d9b25c; background: #fbf2db; }
+.card--jasmine { border-top-color: #7a9a68; background: #edf4e9; }
 
 /* Features */
 .feature {
