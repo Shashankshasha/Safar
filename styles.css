@@ -11,7 +11,7 @@
   --card-bg: #ffffff;
   --border: #ecdccf;
   --radius: 2px;
-  --max-width: 1200px;
+  --max-width: 1340px;
   --display: "Arial Narrow", "Helvetica Neue Condensed Bold", Arial, sans-serif;
   --body-font: Cambria, Georgia, "Times New Roman", serif;
 }
@@ -227,8 +227,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -238,7 +238,7 @@ body {
     grid-column: 1 / -1;
     justify-self: center;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
   }
 }
 
@@ -248,7 +248,7 @@ body {
   border: 1px solid var(--border);
   border-top: 3px solid var(--border);
   border-radius: var(--radius);
-  padding: 30px 26px;
+  padding: 36px 32px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -272,7 +272,7 @@ body {
 
 .gallery-main {
   position: relative;
-  max-width: 220px;
+  max-width: 280px;
   margin: 0 auto;
   cursor: crosshair;
 }
