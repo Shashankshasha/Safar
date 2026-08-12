@@ -233,10 +233,17 @@ body {
 
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 
-/* Product cards all share one fixed size instead of stretching to fill the row */
+/* Product cards all share one fixed size and a leftover row (e.g. 2 of 5)
+   centers itself instead of sticking to the left under a grid track */
 #products .grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+#products .grid > .card {
+  flex: 0 1 360px;
+  min-width: 300px;
 }
 
 /* Product cards */
