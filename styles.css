@@ -566,13 +566,47 @@ body {
   }
 }
 
+/* Gallery stays put on the left as you scroll the description column,
+   so switching between differently-sized photos never needs a scroll. */
+.product-page-grid .product-gallery--large {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+}
+
+@media (max-width: 720px) {
+  .product-page-grid .product-gallery--large {
+    position: static;
+  }
+}
+
 .product-gallery--large .gallery-main {
   max-width: 480px;
+  height: 480px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.product-gallery--large .gallery-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+@media (max-width: 720px) {
+  .product-gallery--large .gallery-main {
+    height: 380px;
+  }
 }
 
 .product-gallery--large .gallery-thumb {
   width: 72px;
   height: 72px;
+  object-fit: contain;
+  background: var(--card-bg);
 }
 
 .product-gallery--large .gallery-zoom-pane {
