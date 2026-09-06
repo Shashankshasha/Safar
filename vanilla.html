@@ -62,9 +62,37 @@
           <li>10ml bottle — more than the 7-8ml most others sell</li>
         </ul>
         <div class="hero-actions">
-          <a class="btn btn-primary btn-large" href="https://wa.me/919999987609?text=Hi%20Grace%20One!%20I%27d%20like%20to%20order%20SAFAR%20Vanilla." target="_blank" rel="noopener">Order on WhatsApp</a>
+          <button type="button" class="btn btn-primary btn-large" data-buy-now data-scent="Vanilla" data-wa-phone="919999987609" aria-expanded="false">Buy Now — Pay Online</button>
+          <a class="btn btn-outline" href="https://wa.me/919999987609?text=Hi%20Grace%20One!%20I%27d%20like%20to%20order%20SAFAR%20Vanilla." target="_blank" rel="noopener">Order on WhatsApp</a>
           <a class="btn btn-outline" href="index.html#products">Back to Collection</a>
         </div>
+
+        <form class="checkout-form" id="checkout-form" hidden>
+          <h3>Shipping Details</h3>
+          <label>Full Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>Phone Number
+            <input type="tel" name="phone" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number" required />
+          </label>
+          <label>Email (optional)
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>Full Address
+            <textarea name="address" rows="2" required></textarea>
+          </label>
+          <div class="checkout-form-row">
+            <label>Pincode
+              <input type="text" name="pincode" inputmode="numeric" pattern="[0-9]{6}" required />
+            </label>
+            <label>Quantity
+              <input type="number" name="quantity" min="1" max="10" value="1" required />
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Proceed to Pay</button>
+          <p class="checkout-note">You'll pay securely via Razorpay — cards, UPI, netbanking, wallets and EMI all accepted.</p>
+        </form>
+        <div class="checkout-status" id="checkout-status" hidden></div>
       </div>
     </div>
   </section>
@@ -90,6 +118,7 @@
   </div>
 </footer>
 
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
