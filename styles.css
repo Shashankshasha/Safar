@@ -164,6 +164,27 @@ button.btn {
 
 .hero-inner {
   text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-mark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  width: 620px;
+  height: 620px;
+  transform: translateY(-50%) rotate(-8deg);
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 1020px) {
+  .hero-mark {
+    display: block;
+  }
 }
 
 .eyebrow {
