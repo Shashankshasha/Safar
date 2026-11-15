@@ -164,27 +164,39 @@ button.btn {
 
 .hero-inner {
   text-align: left;
-  position: relative;
-  z-index: 1;
+  display: grid;
+  gap: 36px;
+  padding-bottom: 56px;
 }
 
-.hero-mark {
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: -60px;
-  width: 620px;
-  height: 620px;
-  transform: translateY(-50%) rotate(-8deg);
-  opacity: 0.14;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@media (min-width: 1020px) {
-  .hero-mark {
-    display: block;
+@media (min-width: 900px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 540px);
+    gap: 56px;
+    align-items: center;
   }
+}
+
+.hero .hero-actions { padding-bottom: 0; }
+
+.hero-photo {
+  margin: 0;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(232, 147, 90, 0.45);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.35);
+}
+
+.hero-photo figcaption {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .eyebrow {
@@ -221,6 +233,13 @@ button.btn {
   gap: 14px;
   flex-wrap: wrap;
   padding-bottom: 56px;
+}
+
+/* Buttons in a row stretch to the tallest one, so centre their labels */
+.hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .road {
@@ -651,6 +670,14 @@ button.btn {
 .product-gallery--large .gallery-zoom-pane {
   width: 380px;
   min-height: 380px;
+}
+
+.gallery-note {
+  max-width: 480px;
+  margin: 14px auto 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
 }
 
 .product-page-info h1 {
