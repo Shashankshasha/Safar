@@ -137,7 +137,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
         order_id: order.orderId,
         prefill: { name, contact: phone, email: email || undefined },
         notes: { scent, quantity: String(quantity), address, pincode },
-        theme: { color: "#c96f39" },
+        theme: { color: "#6d28d9" },
         handler: async (response) => {
           setStatus("Verifying payment…", "loading");
           try {
